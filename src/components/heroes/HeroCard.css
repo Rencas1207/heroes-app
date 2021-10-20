@@ -1,0 +1,80 @@
+.card-list{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 1.5rem;
+}
+.card-item{
+   cursor: pointer;
+   text-align: center;
+   border-radius: .5rem;
+   overflow: hidden;
+   position: relative;
+   box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.25);
+   -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.25);
+   -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.25);
+}
+.card-item img{
+   max-width: 100%;
+   width: 100%;
+   filter: brightness(50%);
+   transform: scale(1);
+   transition: all 0.5s ease;
+}
+.card-item:hover img{
+   filter: brightness(20%);
+   transform: scale(1.05);
+}
+.card-item .description-profile{
+   position: absolute;
+   top: 5%;
+   left: 5%;
+   text-align: left;
+}
+.description-profile .profile-superhero{
+   font-size: 1.2rem;
+   color: white;
+   font-weight: 600;
+}
+.description-profile .profile-name{
+   font-size: 1rem;
+   color: rgb(160, 160, 160);
+   font-style: italic;
+   font-weight: 400;
+}
+.profile-overview{
+   position: absolute;
+   bottom: 0;
+   left: 5%;
+   text-align: left;
+   margin-right: 0.1rem;
+   color: rgb(228, 228, 228);
+}
+.profile-overview h3{
+   font-size: 1.2rem;
+   font-weight: 600;
+}
+.profile-overview p{
+   font-size: .9rem;
+}
+.profile-overview p span{
+   color: rgb(160, 160, 160);
+   font-weight: 400;
+   font-style: italic;
+   font-size: .8rem;
+}
+@media (max-width: 1024px){
+   .card-list{
+      grid-template-columns: repeat(3, 1fr);
+   }
+}
+@media (max-width: 768px){
+   .card-list{
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+@media (max-width: 580px){
+   .card-list{
+      grid-template-columns: repeat(1, 1fr);
+   }
+}
+

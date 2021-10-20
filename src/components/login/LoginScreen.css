@@ -1,0 +1,69 @@
+.login-container {
+  background: linear-gradient(
+      0deg,
+      rgba(112, 70, 11, 0.8) 0,
+      rgba(52, 57, 131, 0.5)
+    ),
+    url('../../assets/hero-image-login.jpg') fixed no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.8);
+  height: 55vh;
+  width: 28vw;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+.error {
+  padding: 0.3rem 0 0.5rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin: 0;
+  color: #da3b3b;
+}
+
+.mensaje {
+  margin: 0;
+  text-align: center;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.login-form label:nth-child(3) {
+  padding-top: 1rem;
+}
+.login .btn-hero {
+  width: 100%;
+}
+.form-input {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 1150px) {
+  .login {
+    width: 50vw;
+  }
+}
+@media (max-width: 800px) {
+  .login {
+    width: 70vw;
+  }
+}
+@media (max-width: 580px) {
+  .login {
+    width: 90vw;
+  }
+}
